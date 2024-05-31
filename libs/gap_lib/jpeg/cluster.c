@@ -33,7 +33,7 @@
 #if defined(__GAP9__)
     #define eu_evt_maskWaitAndClr(x) (hal_cl_eu_event_mask_wait_and_clear(x))
 #else
-    #define eu_evt_maskWaitAndClr(x) (hal_cl_eu_event_mask_wait_clear(x))
+    #define eu_evt_maskWaitAndClr(x) (hal_cl_eu_evt_mask_wait_clear(x))
 #endif
 #else
     #define RT_USER_EVENT 6
